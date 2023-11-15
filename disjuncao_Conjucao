@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+	int num, num2;
+	printf("Insira um numero: ");
+	scanf("%d", &num);
+	if(num> 10 && num <20){
+		printf("numero entre 10 e 20\n");
+	}
+	printf("Insira um numero: ");
+	scanf("%d", &num2);
+	if(num2> 10 || num2 ==0){
+		printf("\numa das condições esta ok");
+	}
+	
+}
