@@ -1,23 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <locale.h>
+
 int main(){
+	setlocale(LC_ALL, "");
 	int num1, num2, ope;
-	printf("Digite o primeiro numero: ");
+	printf("Digite o primeiro número: ");
 	scanf("%d", &num1);
-	printf("Digite o segundo numero: ");
+	printf("Digite o segundo número: ");
 	scanf("%d", &num2);
 	printf("selecione uma operação basica: \n1(+) \n2(-) \n3(X) \n4(/) \n");
 	scanf("%d", &ope);
 	switch(ope){
-		case 1: printf("A soma dos numeros e: %d", num1 + num2);
+		case 1: printf("A soma dos números é: %d", num1 + num2);
 		break;
-		case 2: printf("A subtracao dos numeros e: %d", num1 - num2);
+		case 2: printf("A subtração dos números é: %d", num1 - num2);
 		break;
-		case 3: printf("A multiplicacao dos numeros e: %d", num1 * num2);
+		case 3: printf("A multiplicação dos números é: %d", num1 * num2);
 		break;
-		case 4: printf("A divisao dos numeros e: %d", num1 / num2);
+		case 4: printf("A divisão dos números é: %d", num1 / num2);
 		break;
-		default: printf("Operacao invalida");
+		default: printf("Operação inválida");
 		break;
 	}
 }
