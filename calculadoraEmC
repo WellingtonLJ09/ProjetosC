@@ -1,9 +1,7 @@
-# ProjetosC
-Evolução de acordo com a Aula
+/*# ProjetosC
+Evolução de acordo com a Aula*/
 #include <stdio.h>
 #include <stdlib.h>
-
-
 int main() 
 {
 	float num1, num2; 
