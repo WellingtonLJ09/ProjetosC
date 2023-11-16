@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+	int num1, num2, ope;
+	printf("Digite o primeiro numero: ");
+	scanf("%d", &num1);
+	printf("Digite o segundo numero: ");
+	scanf("%d", &num2);
+	printf("selecione uma operação basica: \n1(+) \n2(-) \n3(X) \n4(/) \n");
+	scanf("%d", &ope);
+	switch(ope){
+		case 1: printf("A soma dos numeros e: %d", num1 + num2);
+		break;
+		case 2: printf("A subtracao dos numeros e: %d", num1 - num2);
+		break;
+		case 3: printf("A multiplicacao dos numeros e: %d", num1 * num2);
+		break;
+		case 4: printf("A divisao dos numeros e: %d", num1 / num2);
+		break;
+		default: printf("Operacao invalida");
+		break;
+	}
+}
