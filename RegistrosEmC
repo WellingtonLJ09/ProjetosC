@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string.h>
+
+struct produto{
+	int cod;
+	float preco;
+	char descr[100];
+};
+
+int main() {
+	struct produto lista[10];
+	
+	for(int i=0; i<10; i++){
+		lista[i].cod = i;
+		
+		printf("Digite o valor do produto %d: \n", i);
+		scanf("%f", &lista[i].preco);
+		fflush(stdin);
+		
+		printf("Digite a descrição do produto %d: \n", i);
+		gets(lista[i].descr);
+		fflush(stdin);
+	}
+	
+}
