@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int calculaMedia(int total){
+	int calcMedia;
+	calcMedia = total / 4;
+	return calcMedia;
+}
+
+int main(){
+	int nota[4], soma = 0, media, i;
+	setlocale(LC_ALL, "");
+	for(i = 1; i <=4; i++){
+		printf("Insira a nota %d \n", i);
+		scanf("%d", &nota[i]);
+		soma = soma + nota[i];
+	}
+	media = calculaMedia(soma);
+	printf("A média do aluno é: %d \n", media);
+	
+	if((media>=5) &&
+	 (media<=6)){
+		printf("Recuperação!");
+	}else{
+			if(media>=7){
+			printf("Aprovado!");
+		}else{
+		
+			printf("Reprovado!");}
+		}	
+}
