@@ -19,7 +19,7 @@ int main() {
   xi = 20; // alterado o valor do xi.
   imprimir();
 
-  *ptr_xi = 30; // alterado o valor do ponteiro que aponta para xi.
+  *ptr_xi = 30; // alterado o valor do ponteiro que aponta para xi
   imprimir();
 
   system("Pause");
