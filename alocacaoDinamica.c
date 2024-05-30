@@ -14,7 +14,7 @@ int main() {
   int x;
   x = 20;
   ptr = &x;
-  printf("Endereço: %p \nValor: %d\n\n", ptr, *ptr);
+  printf("Endereço: %p \nValor: %d\n\n", ptr, *ptr);    
   ptr = (int *)malloc(sizeof(int));
   printf("Endereço: %p \nValor: %d\n\n", ptr, *ptr);
 
